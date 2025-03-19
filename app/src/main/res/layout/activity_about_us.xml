@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgound"
+    android:padding="16dp">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="26dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:contentDescription="Back to Home"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerInside"
+        android:importantForAccessibility="yes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- About Us Title -->
+    <TextView
+        android:id="@+id/aboutTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Us:"
+        android:textColor="@color/Text"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/backButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- About Us Content -->
+    <TextView
+        android:id="@+id/aboutContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="This emergency app is designed to enhance community safety by connecting people nearby in cases of emergencies, such as theft, harassment, or chain snatching. Developed as a government initiative, the app enables users to send real-time alerts to the nearest police station and notifies other app users in the area. By making this app mandatory for everyone, we aim to create a network of support, allowing citizens to assist one another and help law enforcement respond effectively to incidents."
+        android:textColor="@color/Text"
+        android:textSize="20sp"
+        android:lineSpacingExtra="6dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:justificationMode="inter_word"
+        android:importantForAccessibility="yes"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@id/aboutTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

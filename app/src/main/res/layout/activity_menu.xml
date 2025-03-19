@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/backgound">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="MORE:"
+        android:textColor="@color/Text"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textSize="25sp"
+        android:drawableLeft="@drawable/home_1_svgrepo_com"
+        android:backgroundTint="@color/Menu_Button"
+        android:textColor="@color/Text"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/addFamilyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add family and friends number."
+        android:textSize="25sp"
+        android:drawableLeft="@drawable/baseline_call_24"
+        android:backgroundTint="@color/Menu_Button"
+        android:textColor="@color/Text"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/shareLocationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share live location"
+        android:textSize="25sp"
+        android:drawableLeft="@drawable/baseline_add_location_24"
+        android:backgroundTint="@color/Menu_Button"
+        android:textColor="@color/Text"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/onlineFirButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/Menu_Button"
+        android:drawableLeft="@drawable/doc_svgrepo_com"
+        android:text="Online FIR"
+        android:textSize="25sp"
+        android:textColor="@color/Text" />
+
+
+    <Button
+        android:id="@+id/otherButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/Menu_Button"
+        android:drawableLeft="@drawable/baseline_call_made_24"
+        android:text="Other"
+        android:textSize="25sp"
+        android:textColor="@color/Text" />
+
+
+s
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/Menu_Button"
+        android:drawableLeft="@drawable/exit_vector_1_svgrepo_com"
+        android:text="Exit"
+        android:textSize="25sp"
+        android:textColor="@color/Text" />
+
+</LinearLayout>

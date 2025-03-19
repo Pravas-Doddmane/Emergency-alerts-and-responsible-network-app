@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/backgound">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:contentDescription="Back to Home"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerInside"
+        android:importantForAccessibility="yes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- Map Image -->
+    <ImageView
+        android:id="@+id/mapImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:src="@drawable/map"/>
+
+    <!-- Buttons Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- Share Button -->
+        <Button
+            android:id="@+id/shareButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SHARE"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/Submit_button"
+            android:textColor="@color/Text"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Stop Button -->
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STOP"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/Menu_Button"
+            android:textColor="@color/Text"/>
+
+        <!-- Note -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NOTE:\nIf you click the share button, your live location will be sent to your family and friends whose numbers have been added by you. It will inform the nearest police station."
+            android:textSize="16sp"
+            android:textColor="@color/Text"
+            android:gravity="center"
+            android:padding="10dp"/>
+    </LinearLayout>
+</LinearLayout>

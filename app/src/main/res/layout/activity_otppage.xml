@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/backgound"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="20dp">
+
+    <!-- App Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AlertZone"
+        android:textColor="@color/Text"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"/>
+
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="353dp"
+        android:layout_height="292dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/icon" />
+
+
+    <!-- OTP Input Fields -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <EditText
+            android:id="@+id/otp1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/EdtSpace"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="@color/Text"
+            android:textStyle="bold"
+            android:maxLength="1"
+            android:inputType="number"
+            android:hint="•"/>
+
+        <EditText
+            android:id="@+id/otp2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/EdtSpace"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:maxLength="1"
+            android:inputType="number"
+            android:textColor="@color/Text"
+            android:textStyle="bold"
+            android:hint="•"/>
+
+        <EditText
+            android:id="@+id/otp3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/EdtSpace"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="@color/Text"
+            android:maxLength="1"
+            android:inputType="number"
+            android:textStyle="bold"
+            android:hint="•"/>
+
+        <EditText
+            android:id="@+id/otp4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/EdtSpace"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:maxLength="1"
+            android:inputType="number"
+            android:textColor="@color/Text"
+            android:textStyle="bold"
+            android:hint="•"/>
+    </LinearLayout>
+
+    <!-- Submit OTP Button -->
+    <Button
+        android:id="@+id/btnSubmitOtp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/fir_head"
+        android:text="Submit OTP"
+        android:textColor="@color/Text"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Text">#FF000000</color>
+    <color name="EdtSpace">#FFFFFF</color>
+    <color name="backgound">#900</color>
+    <color name="Menu_Button">#E91E1E</color>
+    <color name="Submit_button">#74B820</color>
+    <color name="fir_head">#079DD9</color>
+    <color name="Fir_textField">#B4B0B0</color>
+    <color name="item_emergency">#6DA2A8</color>
+</resources>

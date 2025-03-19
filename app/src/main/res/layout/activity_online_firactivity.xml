@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/backgound">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="26dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:contentDescription="Back to Home"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerInside"
+        android:importantForAccessibility="yes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Online FIR"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/Text"
+        android:gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <!-- Name -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/fir_head"/>
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:background="@color/Fir_textField"
+        android:textColor="@color/Text"
+        android:textColorHint="@color/EdtSpace"
+        android:hint="Enter your name"/>
+
+    <!-- Phone No -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone no.:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/fir_head"/>
+    <EditText
+        android:id="@+id/phoneInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:background="@color/Fir_textField"
+        android:textColor="@color/Text"
+        android:textColorHint="@color/EdtSpace"
+        android:hint="Enter your phone number"
+        android:inputType="phone"/>
+
+    <!-- Address -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/fir_head"/>
+    <EditText
+        android:id="@+id/addressInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:background="@color/Fir_textField"
+        android:textColor="@color/Text"
+        android:textColorHint="@color/EdtSpace"
+        android:hint="Enter your address"/>
+
+    <!-- Description -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/fir_head"/>
+    <EditText
+        android:id="@+id/descriptionInput"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:background="@color/Fir_textField"
+        android:textColor="@color/Text"
+        android:textColorHint="@color/EdtSpace"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:hint="Enter complaint details"/>
+
+    <!-- Upload Image/Video -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload images or video: (Proof)"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/fir_head"/>
+
+
+    <Button
+        android:id="@+id/uploadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose File"
+        android:background="@color/Fir_textField"
+        android:textColor="@color/Text"
+        android:padding="10dp"/>
+
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="@color/Text"
+        android:backgroundTint="@color/Submit_button"
+        android:layout_marginTop="15dp"/>
+
+    <!-- Note -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Note: You will get a call from the nearest police station within a few minutes after submitting your details."
+        android:textSize="18sp"
+        android:textColor="@color/Text"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="10dp"/>
+</LinearLayout>

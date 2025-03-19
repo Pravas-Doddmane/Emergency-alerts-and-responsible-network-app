@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgound"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <!-- App Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="AlertZone"
+        android:textColor="@color/Text"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <!-- Image between Title and Input Field -->
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="350dp"
+        android:layout_height="222dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/icon" />
+
+    <!-- Phone Number Input -->
+
+    <!-- Login Button -->
+    <EditText
+        android:id="@+id/etPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/EdtSpace"
+        android:gravity="center"
+        android:hint="ENTER NUMBER"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:textColor="@color/Text"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/fir_head"
+        android:text="Login"
+        android:textColor="@color/Text"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</LinearLayout>

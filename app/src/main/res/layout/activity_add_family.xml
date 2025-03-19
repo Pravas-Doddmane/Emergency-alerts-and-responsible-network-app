@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/backgound">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="26dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:contentDescription="Back to Home"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerInside"
+        android:importantForAccessibility="yes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- Title -->
+
+    <!-- Input and Add Button Container -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Add Emergency Number"
+        android:textColor="@color/Text"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- Input Field -->
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="56dp"
+            android:hint="Enter Number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:background="@color/EdtSpace"
+            android:padding="12dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/Text"
+            android:minHeight="48dp"/>
+
+        <!-- Add Button -->
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:text="ADD"
+            android:background="@android:color/holo_green_dark"
+            android:textColor="@color/Text"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/numberListLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/warningNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOTE: It will inform police also."
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/Text"
+        android:gravity="center"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
